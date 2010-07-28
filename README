@@ -1,0 +1,13 @@
+This is an absolutely horrible script that may still be useful to someone, somewhere. We needed to covert ~100 users from a 2009 version of Meeting Maker to Google Apps for your Domain Calendar. There was no way to batch export the calendars from Meeting Maker, so we had to do that part manually. The idea of this script is that you might do all the manual exports at once, and have a giant directory full of username.ics and username.txt files. This script will make a pile of nice username-cleaned.ics files that are importable by gCal. 
+
+The other issue with the exports from Meeting Maker is that neither the ics file nor the txt file contained all the data:
+
+ - text export has every unique event, but misses certain kinds of data, like the description
+ - ics export includes description, but is lacking certain classes of events
+ - ics export also omits privacy on events
+
+Hence, we needed to export both files and combine them somehow. 
+
+I can think of about 6 ways offhand to make this script a lot better, but I'm unlikely ever to touch it again.
+
+Any questions? Email nco2104@columbia.edu. I will be overjoyed to help you escape Meeting Maker.
